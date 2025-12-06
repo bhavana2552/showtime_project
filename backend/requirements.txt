@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+aiomysql
+pydantic
+jinja2
+qrcode
+python-dotenv
+passlib
+bcrypt
+mysqlclient
+email-validator
+python-multipart
