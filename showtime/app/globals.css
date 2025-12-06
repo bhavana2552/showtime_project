@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #19183B;
+  --foreground: #E7F2EF;
+  --accent: #A1C2BD;
+  --secondary: #708993;
+  --dark: #19183B;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-dark: var(--dark);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  min-height: 100vh;
+  background:
+      radial-gradient(circle at top, rgba(161, 194, 189, 0.15), transparent 55%),
+      radial-gradient(circle at bottom, rgba(112, 137, 147, 0.1), transparent 60%),
+      linear-gradient(140deg, #19183B 0%, #1a1a3d 45%, #1b1b3f 100%);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  background: rgba(161, 194, 189, 0.4);
+  color: var(--foreground);
+}
