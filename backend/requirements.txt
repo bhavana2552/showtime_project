@@ -10,3 +10,4 @@ bcrypt
 mysqlclient
 email-validator
 python-multipart
+pydantic-settings
