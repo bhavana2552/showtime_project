@@ -23,7 +23,7 @@ npm install
    DB_DATABASE=fall2025bis698tueg4
    ```
    If you are calling the FastAPI backend instead, set
-   `NEXT_PUBLIC_API_BASE=http://localhost:8000` and you can omit the DB_* values.
+   `NEXT_PUBLIC_API_BASE=https://showtime-project.onrender.com` and you can omit the DB_* values.
 
 ### 3. Start dev server
 

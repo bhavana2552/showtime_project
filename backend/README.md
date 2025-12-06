@@ -40,8 +40,8 @@ From the `ShowtimeV2/backend` directory:
 uvicorn app.main:app --reload --port 8000
 ```
 
-The API will be available at `http://localhost:8000` and the main
-router under `http://localhost:8000/api`.
+The API will be available at `https://showtime-project.onrender.com` and the main
+router under `https://showtime-project.onrender.com/api`.
 
 ### 4. Current endpoints
 

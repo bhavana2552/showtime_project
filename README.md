@@ -34,7 +34,7 @@ The system is designed to demonstrate **web application architecture, database d
 
 Communication:
 
-- Frontend calls the backend at `http://localhost:8000` for:
+- Frontend calls the backend at `https://showtime-project.onrender.com` for:
   - `POST /api/bookings` – create booking and payment, send email.
   - `GET /api/bookings?email=...` – list booking history for a user.
 
@@ -149,7 +149,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 Health check:
 
-- Open `http://localhost:8000/health` → should return `{"status": "ok"}`.
+- Open `https://showtime-project.onrender.com/health` → should return `{"status": "ok"}`.
 
 ---
 

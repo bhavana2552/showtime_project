@@ -44,7 +44,7 @@ export default function BookingsPage() {
     try {
       const params = new URLSearchParams({ email: targetEmail });
       const response = await fetch(
-        `http://localhost:8000/api/bookings?${params.toString()}`,
+        `https://showtime-project.onrender.com/api/bookings?${params.toString()}`,
       );
 
       if (!response.ok) {
@@ -71,7 +71,7 @@ export default function BookingsPage() {
     setCancelLoadingId(bookingId);
     try {
       const response = await fetch(
-        `http://localhost:8000/api/bookings/${bookingId}`,
+        `https://showtime-project.onrender.com/api/bookings/${bookingId}`,
         {
           method: "DELETE",
         },
